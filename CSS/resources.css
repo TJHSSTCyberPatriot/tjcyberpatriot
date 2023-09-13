@@ -1,0 +1,299 @@
+@font-face {
+    font-family: "Nunito";
+    src: url("fonts/Nunito/nunito-light-webfont.woff2") format('woff2');
+    font-weight: 100;
+} 
+
+body {
+    padding-top: 6vh !important;
+    background-color: #000;
+}
+
+#particles-js {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Resource*/
+.resource {
+    width: 70%;
+    max-width: 200vh;
+    margin: auto;
+    overflow: hidden;
+}
+
+.resource .title {
+    text-align: center;
+    font-size: 5vh;
+    font-family: 'Metropolis';
+    font-weight: 100;
+    color: #3BB5FC;
+}
+
+.resource .row {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.resource .grid div>a {
+    border-radius: 0.75vh;
+    display: inline-block;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, .1);
+    transition: 0.3s;
+    width: 100%;
+}
+
+.resource .grid div>a:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.resource .img-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-top-left-radius: 0.75vh;
+    border-top-right-radius: 0.75vh;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.resource img {
+    width: 100%;
+    border-top-left-radius: 0.75vh;
+    border-top-right-radius: 0.75vh;
+}
+
+.resource .desc {
+    text-align: center;
+    font-size: 1.9vh;
+    padding: 1vh 2%;
+    color: #fff;
+}
+
+.grid>div>div {
+    padding: 2vh;
+}
+
+/*Flex Masonary*/
+.flexmasonry {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-between;
+}
+
+.flexmasonry-item {
+    width: 100%;
+}
+
+.flexmasonry-cols-2 .flexmasonry-item {
+    width: 50%;
+}
+
+.flexmasonry-cols-3 .flexmasonry-item {
+    width: 33.333%;
+}
+
+.flexmasonry-cols-4 .flexmasonry-item {
+    width: 25%;
+}
+
+.flexmasonry-cols-5 .flexmasonry-item {
+    width: 20%;
+}
+
+.flexmasonry-cols-6 .flexmasonry-item {
+    width: 16.666%;
+}
+
+.flexmasonry-cols-7 .flexmasonry-item {
+    width: 14.285%;
+}
+
+.flexmasonry-cols-8 .flexmasonry-item {
+    width: 12.5%;
+}
+
+.flexmasonry-cols-2 .flexmasonry-item:nth-child(2n+1) {
+    order: 1;
+}
+
+.flexmasonry-cols-2 .flexmasonry-item:nth-child(2n) {
+    order: 2;
+}
+
+.flexmasonry-cols-3 .flexmasonry-item:nth-child(3n+1) {
+    order: 1;
+}
+
+.flexmasonry-cols-3 .flexmasonry-item:nth-child(3n+2) {
+    order: 2;
+}
+
+.flexmasonry-cols-3 .flexmasonry-item:nth-child(3n) {
+    order: 3;
+}
+
+.flexmasonry-cols-4 .flexmasonry-item:nth-child(4n+1) {
+    order: 1;
+}
+
+.flexmasonry-cols-4 .flexmasonry-item:nth-child(4n+2) {
+    order: 2;
+}
+
+.flexmasonry-cols-4 .flexmasonry-item:nth-child(4n+3) {
+    order: 3;
+}
+
+.flexmasonry-cols-4 .flexmasonry-item:nth-child(4n) {
+    order: 4;
+}
+
+.flexmasonry-cols-5 .flexmasonry-item:nth-child(5n+1) {
+    order: 1;
+}
+
+.flexmasonry-cols-5 .flexmasonry-item:nth-child(5n+2) {
+    order: 2;
+}
+
+.flexmasonry-cols-5 .flexmasonry-item:nth-child(5n+3) {
+    order: 3;
+}
+
+.flexmasonry-cols-5 .flexmasonry-item:nth-child(5n+4) {
+    order: 4;
+}
+
+.flexmasonry-cols-5 .flexmasonry-item:nth-child(5n) {
+    order: 5;
+}
+
+.flexmasonry-cols-6 .flexmasonry-item:nth-child(6n+1) {
+    order: 1;
+}
+
+.flexmasonry-cols-6 .flexmasonry-item:nth-child(6n+2) {
+    order: 2;
+}
+
+.flexmasonry-cols-6 .flexmasonry-item:nth-child(6n+3) {
+    order: 3;
+}
+
+.flexmasonry-cols-6 .flexmasonry-item:nth-child(6n+4) {
+    order: 4;
+}
+
+.flexmasonry-cols-6 .flexmasonry-item:nth-child(6n+5) {
+    order: 5;
+}
+
+.flexmasonry-cols-6 .flexmasonry-item:nth-child(6n) {
+    order: 6;
+}
+
+.flexmasonry-cols-7 .flexmasonry-item:nth-child(7n+1) {
+    order: 1;
+}
+
+.flexmasonry-cols-7 .flexmasonry-item:nth-child(7n+2) {
+    order: 2;
+}
+
+.flexmasonry-cols-7 .flexmasonry-item:nth-child(7n+3) {
+    order: 3;
+}
+
+.flexmasonry-cols-7 .flexmasonry-item:nth-child(7n+4) {
+    order: 4;
+}
+
+.flexmasonry-cols-7 .flexmasonry-item:nth-child(7n+5) {
+    order: 5;
+}
+
+.flexmasonry-cols-7 .flexmasonry-item:nth-child(7n+6) {
+    order: 6;
+}
+
+.flexmasonry-cols-7 .flexmasonry-item:nth-child(7n) {
+    order: 7;
+}
+
+.flexmasonry-cols-8 .flexmasonry-item:nth-child(8n+1) {
+    order: 1;
+}
+
+.flexmasonry-cols-8 .flexmasonry-item:nth-child(8n+2) {
+    order: 2;
+}
+
+.flexmasonry-cols-8 .flexmasonry-item:nth-child(8n+3) {
+    order: 3;
+}
+
+.flexmasonry-cols-8 .flexmasonry-item:nth-child(8n+4) {
+    order: 4;
+}
+
+.flexmasonry-cols-8 .flexmasonry-item:nth-child(8n+5) {
+    order: 5;
+}
+
+.flexmasonry-cols-8 .flexmasonry-item:nth-child(8n+6) {
+    order: 6;
+}
+
+.flexmasonry-cols-8 .flexmasonry-item:nth-child(8n+7) {
+    order: 7;
+}
+
+.flexmasonry-cols-8 .flexmasonry-item:nth-child(8n) {
+    order: 8;
+}
+
+.flexmasonry-break {
+    content: "";
+    flex-basis: 100%;
+    width: 0 !important;
+    margin: 0;
+}
+
+.flexmasonry-break-1 {
+    order: 1;
+}
+
+.flexmasonry-break-2 {
+    order: 2;
+}
+
+.flexmasonry-break-3 {
+    order: 3;
+}
+
+.flexmasonry-break-4 {
+    order: 4;
+}
+
+.flexmasonry-break-5 {
+    order: 5;
+}
+
+.flexmasonry-break-6 {
+    order: 6;
+}
+
+.flexmasonry-break-7 {
+    order: 7;
+}
